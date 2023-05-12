@@ -40,7 +40,7 @@ def check_1(v, x, y, pumpingLength):
         print_condition(1, False)
 
 
-def check_2(v, x, y):
+def check_2(v, y):
     if len(v + y) > 0:
         print_condition(2, True)
     else:
@@ -84,7 +84,7 @@ if __name__ == '__main__':
     check_1(v, x, y, pumpingLength)
     print_line()
     print("Checking condition 2")
-    check_2(v, x, y)
+    check_2(v, y)
     print_line()
     print("Checking condition 3")
     check_3(u, v, x, y, z)
