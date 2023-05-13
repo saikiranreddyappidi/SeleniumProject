@@ -1,16 +1,13 @@
 import turtle
 import math
 
-# Set up the turtle screen and window
 wn = turtle.Screen()
 wn.setup(width=800, height=600)
 wn.setworldcoordinates(-math.pi, -1.5, math.pi, 1.5)
-
-# Draw the x and y axes with red color
+wn.title('Sine Graph')
 turtle.pensize(3)
 turtle.speed(100)
 
-# Draw the x and y axis grids with light blue color
 turtle.pencolor('light blue')
 for x in range(-16, 17):
     turtle.penup()
@@ -42,5 +39,4 @@ for x in range(-314, 315):
     turtle.goto(x/100, -math.sin(x/100))
 turtle.penup()
 turtle.hideturtle()
-# Exit on click
 turtle.exitonclick()
