@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import time
 
-path = r"/Drivers/chromedriver.exe"
+path = r"../Drivers/chromedriver.exe"
 option = Options()
 option.page_load_strategy = 'none'
 driver = webdriver.Chrome(service=Service(path), options=option)
